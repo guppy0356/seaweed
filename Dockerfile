@@ -10,4 +10,5 @@ RUN bundle install
 
 COPY . /usr/src/app
 
+ENTRYPOINT ["./entrypoint.sh"]
 CMD [ "bin/rails", "s", "-b", "0.0.0.0" ]
